@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <Windows.h>
 using namespace std;
 
@@ -9,8 +9,8 @@ void main()
 {
 	setlocale(LC_ALL, "");
 #ifdef FOR_SYNTAX
-	int n; // количетво итериаций.
-	cout << "Введите количетво итераций: "; cin >> n;
+	int n; // РєРѕР»РёС‡РµС‚РІРѕ РёС‚РµСЂРёР°С†РёР№.
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµС‚РІРѕ РёС‚РµСЂР°С†РёР№: "; cin >> n;
 	for (int i = 0; i < n; i++)
 	{
 		cout << "Hello FOR";
@@ -21,7 +21,7 @@ void main()
 #ifdef MULTIPLICATION_TABLE
 	for (int i = 1; i <= 10; i++)
 	{
-		cout << "Таблица умножения на " << i << ":\n";
+		cout << "РўР°Р±Р»РёС†Р° СѓРјРЅРѕР¶РµРЅРёСЏ РЅР° " << i << ":\n";
 		for (int j = 1; j <= 10; j++)
 		{
 			if (i < 10) cout << " ";

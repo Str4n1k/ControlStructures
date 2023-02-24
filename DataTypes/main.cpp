@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 using std::cin;
 using std::cout;
@@ -12,7 +12,7 @@ int main()
 {
 
     setlocale(LC_ALL, "Rus");
-    cout << "Ïðèâåò DataTypes" << endl; // << endl òîæå ñàìîå ÷òî è /n
+    cout << "ÐŸÑ€Ð¸Ð²ÐµÑ‚ DataTypes" << endl; // << endl Ñ‚Ð¾Ð¶Ðµ ÑÐ°Ð¼Ð¾Ðµ Ñ‡Ñ‚Ð¾ Ð¸ /n
 #if defined LOGICAL_TYPES
     cout << true << endl;
     cout << false << endl;
@@ -39,30 +39,30 @@ int main()
 #if defined DECLARITION_AND_INITIALISATION
     double price_of_coffee;
     cout << price_of_coffee << endl;
-    int a; //îáúÿâëåíèÿ ïåðåìåííîé áåç èíèöèàëåçàöèè
-    int b = 0; //èíèöèàëåçàöèÿ ïåðåìåííîé ïðè îáúÿâëåíèè
+    int a; //Ð¾Ð±ÑŠÑÐ²Ð»ÐµÐ½Ð¸Ñ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð¾Ð¹ Ð±ÐµÐ· Ð¸Ð½Ð¸Ñ†Ð¸Ð°Ð»ÐµÐ·Ð°Ñ†Ð¸Ð¸
+    int b = 0; //Ð¸Ð½Ð¸Ñ†Ð¸Ð°Ð»ÐµÐ·Ð°Ñ†Ð¸Ñ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð¾Ð¹ Ð¿Ñ€Ð¸ Ð¾Ð±ÑŠÑÐ²Ð»ÐµÐ½Ð¸Ð¸
     int c;
-    c = 0;   //èíèöèàëåçàöèÿ ïåðåìåííîé ïîñëå îáúÿâëåíèÿ,ïðè ïîìîùè ïðèñîâåíèÿ
+    c = 0;   //Ð¸Ð½Ð¸Ñ†Ð¸Ð°Ð»ÐµÐ·Ð°Ñ†Ð¸Ñ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð¾Ð¹ Ð¿Ð¾ÑÐ»Ðµ Ð¾Ð±ÑŠÑÐ²Ð»ÐµÐ½Ð¸Ñ,Ð¿Ñ€Ð¸ Ð¿Ð¾Ð¼Ð¾Ñ‰Ð¸ Ð¿Ñ€Ð¸ÑÐ¾Ð²ÐµÐ½Ð¸Ñ
 #endif // DECLARITION_AND_INITIALISATION
 
 #ifdef COFFEE
     double price_off_coffee;
     int number_of_cups;
-    cout << "Ââåäèòå ñòîèìîñòü êîôå"; cin >> price_off_coffee;
-    cout << "Ââåäèòå êîëè÷åñòâî ÷àøåê: "; cin >> number_of_cups;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ ÐºÐ¾Ñ„Ðµ"; cin >> price_off_coffee;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‡Ð°ÑˆÐµÐº: "; cin >> number_of_cups;
     double total_price = price_off_coffee * number_of_cups;
-    cout << "Îáùàÿ ñòîèìîñòü: " << total_price << endl;
+    cout << "ÐžÐ±Ñ‰Ð°Ñ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ: " << total_price << endl;
 
 #endif // COFFEE
 
     int speed = 0;
-    const int MAX_SPEED = 250; // ÊÎÍÑÒÀÍÒÛ ÂÑÅÃÄÀ ÈÌÅÍÍÓÞÒÑß ÇÀÃËÀÂÍÛÌÈ ÁÓÊÂÀÌÈ.
-    cout << .5 << endl; // 5 ýòî ÷èñëîâàÿ êîíñòàíòà òèïà 'int'
+    const int MAX_SPEED = 250; // ÐšÐžÐÐ¡Ð¢ÐÐÐ¢Ð« Ð’Ð¡Ð•Ð“Ð”Ð Ð˜ÐœÐ•ÐÐÐ£Ð®Ð¢Ð¡Ð¯ Ð—ÐÐ“Ð›ÐÐ’ÐÐ«ÐœÐ˜ Ð‘Ð£ÐšÐ’ÐÐœÐ˜.
+    cout << .5 << endl; // 5 ÑÑ‚Ð¾ Ñ‡Ð¸ÑÐ»Ð¾Ð²Ð°Ñ ÐºÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ð° Ñ‚Ð¸Ð¿Ð° 'int'
     cout << sizeof(.5) << endl;
     cout << typeid(.5).name() << endl;
-    //  5. ýòî ÷èñëîâàÿ êîíñòàíòà òèïà 'double'
-    //  .5 ýòî ÷èñëîâàÿ êîíñòàíòà òèïà 'double'
-    //  .5f ýòî ÷èñëîâàÿ êîíñòàíòà òèïà 'float'
-    //  .5ull ýòî ÷èñëîâàÿ êîíñòàíòà òèïà 'unsigned long long'
+    //  5. ÑÑ‚Ð¾ Ñ‡Ð¸ÑÐ»Ð¾Ð²Ð°Ñ ÐºÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ð° Ñ‚Ð¸Ð¿Ð° 'double'
+    //  .5 ÑÑ‚Ð¾ Ñ‡Ð¸ÑÐ»Ð¾Ð²Ð°Ñ ÐºÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ð° Ñ‚Ð¸Ð¿Ð° 'double'
+    //  .5f ÑÑ‚Ð¾ Ñ‡Ð¸ÑÐ»Ð¾Ð²Ð°Ñ ÐºÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ð° Ñ‚Ð¸Ð¿Ð° 'float'
+    //  .5ull ÑÑ‚Ð¾ Ñ‡Ð¸ÑÐ»Ð¾Ð²Ð°Ñ ÐºÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ð° Ñ‚Ð¸Ð¿Ð° 'unsigned long long'
     cout << sizeof('+') << endl;
     cout << sizeof("+") << endl;

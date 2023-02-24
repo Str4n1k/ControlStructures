@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 void main()
@@ -6,14 +6,14 @@ void main()
 	setlocale(LC_ALL, "");
 	cout << "Hello Contorls!" << endl;
 	int t;
-	cout << "Ââåäèòå òåìïåðàòóðó âîçäóõà:"; cin >> t;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ñƒ Ð²Ð¾Ð·Ð´ÑƒÑ…Ð°:"; cin >> t;
 	if (t > 0)
 	{
-		cout << "Íà óëèöå òåïëî" << endl;
+		cout << "ÐÐ° ÑƒÐ»Ð¸Ñ†Ðµ Ñ‚ÐµÐ¿Ð»Ð¾" << endl;
 	}
 	else
 	{
-		cout << "Íà óëèöå õîëîäíî" << endl;
+		cout << "ÐÐ° ÑƒÐ»Ð¸Ñ†Ðµ Ñ…Ð¾Ð»Ð¾Ð´Ð½Ð¾" << endl;
     }
 
 }
