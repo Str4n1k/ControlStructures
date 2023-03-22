@@ -98,7 +98,7 @@ void FillRand(double arr[], const int n, int minRand, int maxRand)
 		arr[i] = rand() % (maxRand - minRand) + minRand;
 	}
 }
-void fillrand(char arr[], const int n, int minrand, int maxrand)
+void FillRand(char arr[], const int n, int minRand, int maxRand)
 {
 	for (int i = 0; i < n; i++)
 	{
@@ -305,7 +305,7 @@ void Sort(int arr[], const int n)
 		}
 	}
 }
-void Sort(char arr[], const double n)
+void Sort(char arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
 	{
