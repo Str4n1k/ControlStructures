@@ -55,11 +55,11 @@ void shiftRicht(int arr[ROWS][COLS], const int ROWS, const int COLS, int number_
 void shiftRicht(double arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts);
 void shiftRicht(char arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts);
 
-//void UniqueRand(int arr[], const int n);
-//void UniqueRand(int arr[ROWS][COLS], const int ROWS, const int COLS);
-//void UniqueRand(double arr[ROWS][COLS], const int ROWS, const int COLS);
-//void UniqueRand(char arr[ROWS][COLS], const int ROWS, const int COLS);
-//
+void UniqueRand(int arr[], const int n);
+void UniqueRand(int arr[ROWS][COLS], const int ROWS, const int COLS);
+void UniqueRand(double arr[ROWS][COLS], const int ROWS, const int COLS);
+void UniqueRand(char arr[ROWS][COLS], const int ROWS, const int COLS);
+
 //void Search(int arr[], const int n);
 //void Search(int arr[ROWS][COLS], const int ROWS, const int COLS);
 //void Search(double arr[ROWS][COLS], const int ROWS, const int COLS);
@@ -103,22 +103,21 @@ void main()
 	double d_arr_2[ROWS][COLS];
 	FillRand(i_arr_2, ROWS, COLS);
 	FillRand(d_arr_2, ROWS, COLS);
-	std::cout << "Массив " << endl;
+	std::cout << "Массив " << std::endl;
 	Print(i_arr_2, ROWS, COLS);
 	Print(d_arr_2, ROWS, COLS);
 	
-	std::cout << "Сумма целых элеметов: " << Sum(i_arr_2, ROWS, COLS) << endl;
-	std::cout << "Сумма вещественных элеметов: " << Sum(d_arr_2, ROWS, COLS) << endl;
+	std::cout << "Сумма целых элеметов: " << Sum(i_arr_2, ROWS, COLS) << std::endl;
+	std::cout << "Сумма вещественных элеметов: " << Sum(d_arr_2, ROWS, COLS) << std::endl;
 	
-	std::cout << "Среднее арифметическое целых элеметво: " << Avg(i_arr_2, ROWS, COLS) << endl;
-	std::cout << "Среднее арифметическое вещественных элеметво: " << Avg(d_arr_2, ROWS, COLS) << endl;
+	std::cout << "Среднее арифметическое целых элеметво: " << Avg(i_arr_2, ROWS, COLS) << std::endl;
+	std::cout << "Среднее арифметическое вещественных элеметво: " << Avg(d_arr_2, ROWS, COLS) << std::endl;
 	
-	std::cout << "Минимальное целых элементов матрицы: " << minValueIn(i_arr_2, ROWS, COLS) << endl;
-	std::cout << "Минимальное арифметическое вещественных элементов матрицы: " << minValueIn(d_arr_2, ROWS, COLS) << endl;
+	std::cout << "Минимальное целых элементов матрицы: " << minValueIn(i_arr_2, ROWS, COLS) << std::endl;
+	std::cout << "Минимальное арифметическое вещественных элементов матрицы: " << minValueIn(d_arr_2, ROWS, COLS) << std::endl;
 
-	
-	std::cout << "Максимальное целых элементов: " << maxValueIn(i_arr_2, ROWS, COLS) << endl;
-	std::cout << "Максимальное арифметическое вещественных элементов: " << maxValueIn(d_arr_2, ROWS, COLS) << endl;
+	std::cout << "Максимальное целых элементов: " << maxValueIn(i_arr_2, ROWS, COLS) << std::endl;
+	std::cout << "Максимальное арифметическое вещественных элементов: " << maxValueIn(d_arr_2, ROWS, COLS) << std::endl;
 	
 	std::cout << "Сдвиг" << endl;
 	shiftLeft(i_arr_2, ROWS, COLS, number_of_shifts);
@@ -140,20 +139,18 @@ void main()
 	Print(d_arr_2, ROWS, COLS); std::cout << endl;
 
 
-	/*st*//*d::cout << "Поиск повторов в массиве" << endl;
-	Search(i_arr_2, ROWS, COLS); std::cout << endl;
-	Search(d_arr_2, ROWS, COLS); std::cout << endl;
-	Search(c_arr_2, ROWS, COLS); std::cout << endl;
+	//std::cout << "Поиск повторов в массиве" << std::endl;
+	//Search(i_arr_2, ROWS, COLS); std::cout << std::endl;
+	//Search(d_arr_2, ROWS, COLS); std::cout << std::endl;
+	//Search(c_arr_2, ROWS, COLS); std::cout << std::endl;
 
-	std::cout << "Уникальность " << endl;
+	std::cout << "Уникальность " << std::endl;
 	UniqueRand(i_arr_2, ROWS, COLS);
-	Print(i_arr_2, ROWS, COLS); std::cout << endl;
+	Print(i_arr_2, ROWS, COLS); std::cout << std::endl;
 
 	UniqueRand(d_arr_2, ROWS, COLS);
-	Print(d_arr_2, ROWS, COLS); std::cout << endl;
+	Print(d_arr_2, ROWS, COLS); std::cout << std::endl;
 
-	UniqueRand(c_arr_2, ROWS, COLS);
-	Print(c_arr_2, ROWS, COLS); std::cout;*/
 }
 
 void FillRand(int arr[], const int n, int minRand, int maxRand)
@@ -647,158 +644,159 @@ void shiftRicht(char arr[ROWS][COLS], const int ROWS, const int COLS, int number
 	shiftLeft(arr, ROWS, COLS, ROWS * COLS - number_of_shifts);
 }
 
-//void UniqueRand(int arr[], const int n)
-//{
-//	for (int i = 0; i < n; i++)
-//	{
-//		arr[i] = rand() % 10;
-//		for (int j = 0; j < i; j++)
-//		{
-//			if (arr[i] == arr[j])
-//			{
-//				i--;
-//				break;
-//			}
-//		}
-//	}
-//}
-//void UniqueRand(double arr[], const int n)
-//{
-//	for (int i = 0; i < n; i++)
-//	{
-//		arr[i] = rand() % 10;
-//		for (int j = 0; j < i; j++)
-//		{
-//			if (arr[i] == arr[j])
-//			{
-//				i--;
-//				break;
-//			}
-//		}
-//	}
-//}
-//void UniqueRand(char arr[], const int n)
-//{
-//	for (int i = 0; i < n; i++)
-//	{
-//		arr[i] = rand() % 10;
-//		for (int j = 0; j < i; j++)
-//		{
-//			if (arr[i] == arr[j])
-//			{
-//				i--;
-//				break;
-//			}
-//		}
-//	}
-//}
-//void UniqueRand(int arr[ROWS][COLS], const int ROWS, const int COLS)
-//{
-//	int g;
-//	bool baf = true;
-//	for (i = 0; i < ROWS; i++)
-//	{
-//		for (j = 0; j < COLS; )
-//		{
-//			baf = true;
-//			g = rand() % 15;
-//			for (r = 0; r < ROWS; r++)
-//			{
-//				for (s = 0; s < COLS; s++)
-//				{
-//					if (arr[r][s] == g)baf = false;
-//				}
-//			}
-//			if (baf)
-//			{
-//				arr[i][j] = g;
-//				j++;
-//			}
-//
-//		}
-//	}
-//}
-//void UniqueRand(double arr[ROWS][COLS], const int ROWS, const int COLS)
-//{
-//	double g;
-//	bool baf = true;
-//	for (i = 0; i < ROWS; i++)
-//	{
-//		for (j = 0; j < COLS; )
-//		{
-//			baf = true;
-//			g = rand() % 15;
-//			for (r = 0; r < ROWS; r++)
-//			{
-//				for (s = 0; s < COLS; s++)
-//				{
-//					if (arr[r][s] == g)baf = false;
-//				}
-//			}
-//			if (baf)
-//			{
-//				arr[i][j] = g;
-//				j++;
-//			}
-//
-//		}
-//	}
-//}
-//void UniqueRand(char arr[ROWS][COLS], const int ROWS, const int COLS)
-//{
-//	int g;
-//	bool baf = true;
-//	for (i = 0; i < ROWS; i++)
-//	{
-//		for (j = 0; j < COLS; )
-//		{
-//			baf = true;
-//			g = rand() % 15;
-//			for (r = 0; r < ROWS; r++)
-//			{
-//				for (s = 0; s < COLS; s++)
-//				{
-//					if (arr[r][s] == g)baf = false;
-//				}
-//			}
-//			if (baf)
-//			{
-//				arr[i][j] = g;
-//				j++;
-//			}
-//
-//		}
-//	}
-//}
-//
-//void Search(int arr[], const int n)
-//{
-//	for (int i = 0; i < n; i++)
-//	{
-//		bool met_before = false;//предположем что искомое число не встречалось в массиве ранее, 
-//		//но это нужно проверить:
-//		for (int j = 0; j < i; j++)
-//		{
-//			if (arr[i] == arr[j])
-//			{
-//				met_before = true; //Запоминает то, что число встречалось ранее
-//				break;
-//			}
-//		}
-//		if (met_before)continue;
-//		int count = 0; // Счётчик повторений
-//		for (int j = i + 1; j < n; j++)
-//		{
-//			if (arr[i] == arr[j])
-//			{
-//				count++;
-//			}
-//		}
-//		if (count)printf("Значение %i повторяется %i раз\n", arr[i], count);
-//		/*if (count)cout << "Значение " << arr[i] << " повторяется " << count << " раз" << endl;*/
-//
-//	}
-//}
+void UniqueRand(int arr[], const int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		arr[i] = rand() % 10;
+		for (int j = 0; j < i; j++)
+		{
+			if (arr[i] == arr[j])
+			{
+				i--;
+				break;
+			}
+		}
+	}
+}
+void UniqueRand(double arr[], const int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		arr[i] = rand() % 10;
+		for (int j = 0; j < i; j++)
+		{
+			if (arr[i] == arr[j])
+			{
+				i--;
+				break;
+			}
+		}
+	}
+}
+void UniqueRand(char arr[], const int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		arr[i] = rand() % 10;
+		for (int j = 0; j < i; j++)
+		{
+			if (arr[i] == arr[j])
+			{
+				i--;
+				break;
+			}
+		}
+	}
+}
+void UniqueRand(int arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	int ter;
+	bool baf = true;
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; )
+		{
+			baf = true;
+			ter = rand() % 15;
+			for (int r = 0; r < ROWS; r++)
+			{
+				for (int s = 0; s < COLS; s++)
+				{
+					if (arr[r][s] == ter)baf = false;
+				}
+			}
+			if (baf)
+			{
+				arr[i][j] = ter;
+				j++;
+			}
+		
+		}
+	}
+}
+void UniqueRand(double arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	double ter;
+	bool baf = true;
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; )
+		{
+			baf = true;
+			ter = rand() % 1500;
+			ter /= 100;
+			for (int r = 0; r < ROWS; r++)
+			{
+				for (int s = 0; s < COLS; s++)
+				{
+					if (arr[r][s] == ter)baf = false;
+				}
+			}
+			if (baf)
+			{
+				arr[i][j] = ter;
+				j++;
+			}
+
+		}
+	}
+}
+void UniqueRand(char arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	int ter;
+	bool baf = true;
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; )
+		{
+			baf = true;
+			ter = rand() % 15;
+			for (int r = 0; r < ROWS; r++)
+			{
+				for (int s = 0; s < COLS; s++)
+				{
+					if (arr[r][s] == ter)baf = false;
+				}
+			}
+			if (baf)
+			{
+				arr[i][j] = ter;
+				j++;
+			}
+
+		}
+	}
+}
+
+void Search(int arr[], const int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		bool met_before = false;//предположем что искомое число не встречалось в массиве ранее, 
+		//но это нужно проверить:
+		for (int j = 0; j < i; j++)
+		{
+			if (arr[i] == arr[j])
+			{
+				met_before = true; //Запоминает то, что число встречалось ранее
+				break;
+			}
+		}
+		if (met_before)continue;
+		int count = 0; // Счётчик повторений
+		for (int j = i + 1; j < n; j++)
+		{
+			if (arr[i] == arr[j])
+			{
+				count++;
+			}
+		}
+		if (count)printf("Значение %i повторяется %i раз\n", arr[i], count);
+		/*if (count)cout << "Значение " << arr[i] << " повторяется " << count << " раз" << endl;*/
+
+	}
+}
 //void Search(int arr[ROWS][COLS], const int ROWS, const int COLS)
 //{
 //	for (int i = 0; i < n; i++)
