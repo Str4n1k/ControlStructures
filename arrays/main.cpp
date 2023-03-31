@@ -142,7 +142,6 @@ void main()
 	//std::cout << "Поиск повторов в массиве" << std::endl;
 	//Search(i_arr_2, ROWS, COLS); std::cout << std::endl;
 	//Search(d_arr_2, ROWS, COLS); std::cout << std::endl;
-	//Search(c_arr_2, ROWS, COLS); std::cout << std::endl;
 
 	std::cout << "Уникальность " << std::endl;
 	UniqueRand(i_arr_2, ROWS, COLS);
