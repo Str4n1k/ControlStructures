@@ -206,6 +206,7 @@ void Print(const int arr[], const int n)
 	}
 	std::cout << endl;
 }
+
 void Print(const double arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
