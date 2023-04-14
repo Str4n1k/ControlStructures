@@ -75,7 +75,7 @@ void UniqueRand(int arr[ROWS][COLS], const int ROWS, const int COLS)
 			do
 			{
 				arr[i][j] = rand() % (ROWS * COLS);
-				unique = true; 
+				unique = true;
 				for (int k = 0; k <= i; k++)
 				{
 					for (int l = 0; l < (k == i ? j : COLS); l++)
@@ -102,7 +102,7 @@ void UniqueRand(double arr[ROWS][COLS], const int ROWS, const int COLS)
 			do
 			{
 				arr[i][j] = rand() % (ROWS * COLS);
-				unique = true; 
+				unique = true;
 				for (int k = 0; k <= i; k++)
 				{
 					for (int l = 0; l < (k == i ? j : COLS); l++)
@@ -129,7 +129,7 @@ void UniqueRand(char arr[ROWS][COLS], const int ROWS, const int COLS)
 			do
 			{
 				arr[i][j] = rand() % (ROWS * COLS);
-				unique = true; 
+				unique = true;
 				for (int k = 0; k <= i; k++)
 				{
 					for (int l = 0; l < (k == i ? j : COLS); l++)

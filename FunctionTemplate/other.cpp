@@ -1,10 +1,10 @@
 #include"Constants.h"
 
-template<typename T> T Sum(const T arr[], const int SIZE)
+template<typename T> T Sum(const T arr[], const int n)
 {
 	//Вычисление суммы элементов массива:
 	T sum = 0;
-	for (int i = 0; i < SIZE; i++)
+	for (int i = 0; i < n; i++)
 	{
 		sum += arr[i];
 	}
@@ -23,19 +23,19 @@ template<typename T> T Sum(const T arr[ROWS][COLS], const int ROWS, const int CO
 	return sum;
 }
 
-template<typename T> double Avg(const T arr[], const int SIZE)
+template<typename T> double Avg(const T arr[], const int n)
 {
-	return (double)Sum(arr, SIZE) / SIZE;
+	return (double)Sum(arr, n) / n;
 }
 template<typename T> double Avg(const T arr[ROWS][COLS], const int ROWS, const int COLS)
 {
 	return (double)Sum(arr, ROWS, COLS) / (ROWS * COLS);
 }
 
-template<typename T> T minValueIn(const T arr[], const int SIZE)
+template<typename T> T minValueIn(const T arr[], const int n)
 {
 	T min = arr[0];
-	for (int i = 0; i < SIZE; i++)
+	for (int i = 0; i < n; i++)
 	{
 		if (arr[i] < min)min = arr[i];
 	}
@@ -53,10 +53,10 @@ template<typename T> T minValueIn(const T arr[ROWS][COLS], const int ROWS, const
 	}
 	return min;
 }
-template<typename T> T maxValueIn(const T arr[], const int SIZE)
+template<typename T> T maxValueIn(const T arr[], const int n)
 {
 	T max = arr[0];
-	for (int i = 0; i < SIZE; i++)
+	for (int i = 0; i < n; i++)
 	{
 		if (arr[i] > max)max = arr[i];
 	}

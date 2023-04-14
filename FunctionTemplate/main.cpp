@@ -1,11 +1,11 @@
 #include"stdafx.h"
 #include"Constants.h"
-#include"FillUniq.cpp"
-#include"other.cpp"
+#include"FillUniq.h"
 #include"Print.cpp"
-#include"Search.cpp"
+#include"other.cpp"
 #include"Shifts.cpp"
 #include"Sort.cpp"
+#include"Search.cpp"
 
 void main()
 {
@@ -30,21 +30,12 @@ void main()
 	Print(arr, n);
 	shiftRight(arr, n, number_of_shifts);
 	Print(arr, n);
-
+	cout << endl;
 	const int SIZE = 8;
 	double d_arr[SIZE];
 	FillRand(d_arr, SIZE);
 	Print(d_arr, SIZE);
-	cout << "Сумма элементов массива: " << Sum(d_arr, SIZE) << endl;
-	cout << "Среднее-арифметическое элементов массива: " << Avg(d_arr, SIZE) << endl;
-	cout << "Минимальное значение в массиве: " << minValueIn(d_arr, SIZE) << endl;
-	cout << "Максимальное значение в массиве: " << maxValueIn(d_arr, SIZE) << endl;
-	Sort(d_arr, SIZE);
-	Print(d_arr, SIZE);
-	
-	cout << "Введите количество сдвигов: "; cin >> number_of_shifts;
-	shiftLeft(d_arr, SIZE, number_of_shifts);
-	Print(d_arr, SIZE);
+	cout << endl;
 
 	int i_arr_2[ROWS][COLS];
 	double d_arr_2[ROWS][COLS];
@@ -56,26 +47,31 @@ void main()
 	Print(i_arr_2, ROWS, COLS);
 	Print(d_arr_2, ROWS, COLS);
 	Print(c_arr_2, ROWS, COLS);
-
+	cout << endl;
 	cout << "Сумма элементов массива: " << Sum(i_arr_2, ROWS,COLS) << endl;
 	cout << "Сумма элементов массива: " << Sum(d_arr_2, ROWS,COLS) << endl;
 	cout << "Сумма элементов массива: " << Sum(c_arr_2, ROWS,COLS) << endl;
+	cout << endl;
 	cout << "Среднее-арифметическое элементов массива: " << Avg(i_arr_2,ROWS,COLS) << endl;
 	cout << "Среднее-арифметическое элементов массива: " << Avg(d_arr_2,ROWS,COLS) << endl;
 	cout << "Среднее-арифметическое элементов массива: " << Avg(c_arr_2,ROWS,COLS) << endl;
+	cout << endl;
 	cout << "Минимальное значение в массиве: " << minValueIn(i_arr_2,ROWS,COLS) << endl;
 	cout << "Минимальное значение в массиве: " << minValueIn(d_arr_2,ROWS,COLS) << endl;
 	cout << "Минимальное значение в массиве: " << minValueIn(c_arr_2,ROWS,COLS) << endl;
+	cout << endl;
 	cout << "Максимальное значение в массиве: " << maxValueIn(i_arr_2,ROWS,COLS) << endl;
 	cout << "Максимальное значение в массиве: " << maxValueIn(d_arr_2,ROWS,COLS) << endl;
 	cout << "Максимальное значение в массиве: " << maxValueIn(c_arr_2,ROWS,COLS) << endl;
-	cout << "Введите количество сдвигов в лево: "; cin >> number_of_shifts;
+	cout << endl;
+	cout << "Введите количество сдвигов влево: "; cin >> number_of_shifts;
 	shiftLeft(i_arr_2, ROWS, COLS, number_of_shifts);
 	Print(i_arr_2, ROWS, COLS); cout << endl;
 	shiftLeft(d_arr_2, ROWS, COLS, number_of_shifts);
 	Print(d_arr_2, ROWS, COLS); cout << endl;
 	shiftLeft(c_arr_2, ROWS, COLS, number_of_shifts);
 	Print(c_arr_2, ROWS, COLS); cout << endl;
+	cout << endl;
 	cout << "Введите количество сдвигов вправо: "; cin >> number_of_shifts;
 	shiftRight(i_arr_2, ROWS, COLS, number_of_shifts);
 	Print(i_arr_2, ROWS, COLS); cout << endl;
@@ -83,6 +79,7 @@ void main()
 	Print(d_arr_2, ROWS, COLS); cout << endl;
 	shiftRight(c_arr_2, ROWS, COLS, number_of_shifts);
 	Print(c_arr_2, ROWS, COLS); cout << endl;
+	cout << endl;
 	cout << "Сортировочка" << endl;
 	Sort(i_arr_2, ROWS, COLS);
 	Print(i_arr_2, ROWS, COLS); cout << endl;
@@ -90,6 +87,7 @@ void main()
 	Print(d_arr_2, ROWS, COLS); cout << endl;
 	Sort(c_arr_2, ROWS, COLS);
 	Print(c_arr_2, ROWS, COLS); cout << endl;
+	cout << endl;
 	cout << "Поиск повторов " << endl;
 	Search(i_arr_2, ROWS, COLS); cout << endl;
 	Search(d_arr_2, ROWS, COLS); cout << endl;
