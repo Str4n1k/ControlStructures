@@ -1,5 +1,6 @@
 #include"stdafx.h"
 #include"Constants.h"
+
 void FillRand(int arr[], const int n)
 {
 	//rand();	//возвращает псевдослучайное число в диапазоне от 0 до 32 767 (MAX_RAND)

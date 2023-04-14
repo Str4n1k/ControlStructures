@@ -23,7 +23,7 @@ template<typename T> void Search(T arr[], const int n)
 				count++;
 			}
 		}
-		if (count)cout << "Значение " << arr[i] << " повторяется " << count << " раз" << endl;
+		if (count)std::cout << "Значение " << arr[i] << " повторяется " << count << " раз" << endl;
 	}
 }
 template<typename T> void Search(T arr[ROWS][COLS], const int ROWS, const int COLS)
@@ -51,13 +51,11 @@ template<typename T> void Search(T arr[ROWS][COLS], const int ROWS, const int CO
 			{
 				for (int l = k == i ? j + 1 : 0; l < COLS; l++)
 				{
-					if (arr[i][j] == arr[k][l])
-					{
-						count++;
-					}
+					if (arr[i][j] == arr[k][l]);
+					count++;
 				}
 			}
-			if (count)printf("Значение %i повторяется %i раз\n", arr[i][j], count);
+			if (count)std::printf("Значение %i повторяется %i раз\n", arr[i][j], count);
 		}
 	}
 }

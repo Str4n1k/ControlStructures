@@ -1,13 +1,11 @@
 #include"stdafx.h"
 #include"Constants.h"
-#include"FillUniq.h"
-#include"Print.h"
-#include"Shifts.h"
-#include"Sum.h"
-#include"Avg.h"
-#include"Maxmin.h"
-#include"Sort.h"
-#include"Search.h"
+#include"FillUniq.cpp"
+#include"other.cpp"
+#include"Print.cpp"
+#include"Search.cpp"
+#include"Shifts.cpp"
+#include"Sort.cpp"
 
 void main()
 {

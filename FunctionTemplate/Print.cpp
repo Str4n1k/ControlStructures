@@ -1,10 +1,10 @@
 #include"stdafx.h"
 #include"Constants.h"
 
-template<typename T> void Print(T const  arr[], const int n)
+template<typename T> void Print(T const  arr[], const int SIZE)
 {
 	//Вывод массива на экран:
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < SIZE; i++)
 	{
 		cout << arr[i] << "\t";
 	}

@@ -27,13 +27,7 @@
     <ClCompile Include="Shifts.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Sum.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Avg.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Maxmin.cpp">
+    <ClCompile Include="other.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Sort.cpp">
@@ -59,13 +53,7 @@
     <ClInclude Include="Shifts.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Sum.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Avg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Maxmin.h">
+    <ClInclude Include="other.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Sort.h">

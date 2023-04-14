@@ -1,12 +1,11 @@
-#include"stdafx.h"
 #include"Constants.h"
 
-template<typename T> void Sort(T arr[], const int n)
+template<typename T> void Sort(T arr[], const int SIZE)
 {
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < SIZE; i++)
 	{
 		//—четчик 'i' выбирает элемент, в который нужно поместить минимальное значение из перебираемых
-		for (int j = i + 1; j < n; j++)
+		for (int j = i + 1; j < SIZE; j++)
 		{
 			//—четчик 'j' перебирает элементы, в поисках минимального
 			//arr[i] - выбранный элемент

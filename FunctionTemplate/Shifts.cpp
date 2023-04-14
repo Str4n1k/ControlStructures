@@ -1,5 +1,5 @@
-#include"stdafx.h"
 #include"Constants.h"
+
 template<typename T> void shiftLeft(T arr[], const int n, int number_of_shifts)
 {
 	for (int i = 0; i < number_of_shifts; i++)
