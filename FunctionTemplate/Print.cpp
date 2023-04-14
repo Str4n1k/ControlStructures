@@ -1,9 +1,9 @@
-#include"stdafx.h"
+п»ї#include"stdafx.h"
 #include"Constants.h"
 
 template<typename T> void Print(T const  arr[], const int n)
 {
-	//Вывод массива на экран:
+	//Р’С‹РІРѕРґ РјР°СЃСЃРёРІР° РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << "\t";

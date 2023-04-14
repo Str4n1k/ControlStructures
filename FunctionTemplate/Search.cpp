@@ -1,4 +1,4 @@
-#include"stdafx.h"
+ï»¿#include"stdafx.h"
 #include"Constants.h"
 
 template<typename T> void Search(T arr[], const int n)
@@ -23,7 +23,7 @@ template<typename T> void Search(T arr[], const int n)
 				count++;
 			}
 		}
-		if (count)std::cout << "Çíà÷åíèå " << arr[i] << " ïîâòîðÿåòñÿ " << count << " ðàç" << endl;
+		if (count)std::cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ " << arr[i] << " Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÑÐµÑ‚ÑÑ " << count << " Ñ€Ð°Ð·" << endl;
 	}
 }
 template<typename T> void Search(T arr[ROWS][COLS], const int ROWS, const int COLS)
@@ -57,7 +57,7 @@ template<typename T> void Search(T arr[ROWS][COLS], const int ROWS, const int CO
 					}
 				}
 			}
-			if (count)std::cout << "Çíà÷åíèå " << arr[i][j] << " ïîâòîðÿåòñÿ " << count << " ðàç" << endl;
+			if (count)std::cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ " << arr[i][j] << " Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÑÐµÑ‚ÑÑ " << count << " Ñ€Ð°Ð·" << endl;
 		}
 	}
 }

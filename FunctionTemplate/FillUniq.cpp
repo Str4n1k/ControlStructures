@@ -1,9 +1,9 @@
-#include"stdafx.h"
+п»ї#include"stdafx.h"
 #include"Constants.h"
 
 void FillRand(int arr[], const int n)
 {
-	//rand();	//возвращает псевдослучайное число в диапазоне от 0 до 32 767 (MAX_RAND)
+	//rand();	//РІРѕР·РІСЂР°С‰Р°РµС‚ РїСЃРµРІРґРѕСЃР»СѓС‡Р°Р№РЅРѕРµ С‡РёСЃР»Рѕ РІ РґРёР°РїР°Р·РѕРЅРµ РѕС‚ 0 РґРѕ 32 767 (MAX_RAND)
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % 100;
@@ -11,7 +11,7 @@ void FillRand(int arr[], const int n)
 }
 void FillRand(double arr[], const int n)
 {
-	//rand();	//возвращает псевдослучайное число в диапазоне от 0 до 32 767 (MAX_RAND)
+	//rand();	//РІРѕР·РІСЂР°С‰Р°РµС‚ РїСЃРµРІРґРѕСЃР»СѓС‡Р°Р№РЅРѕРµ С‡РёСЃР»Рѕ РІ РґРёР°РїР°Р·РѕРЅРµ РѕС‚ 0 РґРѕ 32 767 (MAX_RAND)
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % 10000;
