@@ -93,8 +93,3 @@ void main()
 	Search(d_arr_2, ROWS, COLS); cout << endl;
 	Search(c_arr_2, ROWS, COLS); cout << endl;
 }
-
-
-
-
-
